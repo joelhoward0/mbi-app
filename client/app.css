@@ -1,0 +1,43 @@
+html {
+  height: 100%;
+  font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+}
+
+h1,h2,h3,h4 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}
+
+h2, h3 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+body {
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+}
+
+ul, ol {
+  list-style-type: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+}
+
+.valid-mbi {
+ color: green;
+}
+
+.invalid-mbi {
+  color: pink;
+}
+
+.most-recent-mbi {
+  font-weight: bold;
+}
