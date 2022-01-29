@@ -2,13 +2,11 @@ $deployDirName = "mbi-app-heroku-deploy"
 $deployPath = "C:\git"
 $fullDeployPath = Join-Path -Path $deployPath -ChildPath $deployDirName
 
-if (!(Test-Path $deployPath)) {
+if (!(Test-Path $fullDeployPath)) {
   New-Item -Path $deployPath -Name $deployDirName -ItemType "directory"
 }
 
 [array]$children1 = Get-ChildItem $fullDeployPath | % { Resolve-Path "$fullDeployPath\$_" }
-
-Write-Host $children
 
 $deleteExclusions = @(
   ".git", 
