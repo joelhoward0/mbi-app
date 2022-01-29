@@ -2,9 +2,9 @@
   "name": "mbi-app",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
   "repository": {},
   "scripts": {
+    "start": "node ./server/index",
     "build-tsc": "tsc",
     "build-web": "webpack",
     "build-all": "run-p build-tsc build-web",
@@ -12,6 +12,7 @@
     "build-and-deploy": "run-s build-all deploy",
     "test": "jest"
   },
+  
   "author": "Joel Howard",
   "license": "ISC",
   "engines": {

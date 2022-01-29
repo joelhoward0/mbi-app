@@ -50,6 +50,7 @@ export function App() {
       >
         Verify an MBI:{state.verifying ? ' (Verifying...)' : ''}
       </button>
+      { /* This could be a masked input to be more user-friendly */ }
       <input 
         type="text" 
         placeholder='XXXX-XXX-XXXX'

@@ -7,7 +7,8 @@ export namespace MBI {
     return result.join("");
   }
 
-  //I am following the spec 
+  //I am following the spec here and encoding the MBI without its dashes. This creates a little big of confusion around formatting and parsing; ideally,
+  //we would have some kind of type that indicates whether an MBI is in "storage" format or "display" format. For now, I simply store MBIs as strings.
   type MBICharacterType = 'Letter' | 'NumberNotZero' | 'Number' | 'Either'
   const mbiIndices: MBICharacterType[] = [
     'NumberNotZero',
